@@ -142,7 +142,7 @@ function ThreadCard({
             </p>
           </Link>
         </div>
-      )}
+      )}    
 
       {!isComment && community && (
         <Link
@@ -151,7 +151,7 @@ function ThreadCard({
         >
           <p className='text-subtle-medium text-gray-1'>
             {formatDateString(createdAt)}
-            {community && ` - ${community.name} Community`}
+            {" "} - {community && ` - ${community.name} Community`}
           </p>
 
           <Image
